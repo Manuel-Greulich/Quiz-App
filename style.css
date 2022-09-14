@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray !important;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold !important;
+    margin-bottom: 2.5rem !important;
+}
+
+h5 {
+    text-align: center;
+    font-weight: bold !important;
+}
+
+.quizbox {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+}
+
+.nav {
+    background-color: rgb(34, 34, 100) !important;
+    padding: 20px !important;
+    border-radius: 6px 0px 0px 6px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.question-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.quiz-card {
+    width: 35rem !important;
+    background-image: url('img/brainbg.jpg'); 
+    background-size: cover;
+    border-radius: 0;
+}
+
+.quiz-answer-card:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.bg-success, .bg-danger {
+    color: white;
+}
+
+.pokal-img {
+    width: 80%;
+    border-radius: 100%;
+}
+
+.pokal-image {
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.quiz-end {
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.quiz-end-text {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.card-title {
+    padding: 10px;
+}
+
+.card {
+    border-top-right-radius: 0.375rem !important;
+    border-bottom-right-radius: 0.375rem !important;
+    border-radius: 0;
+}
+.margin-logo {
+    margin-bottom: 30px;
+}
+
+.button-restart {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.start-screen {
+    position: absolute;
+    z-index: 3;
+    min-width: 100%;
+    height: 100%;
+    background-image: url('img/brainbg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-button {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 40px;
+}
+
+/* Rainbox text */
+
+.rainbow-text {
+    animation-name: rainbow;           /* nutze die "rainbow" colors */
+    animation-duration: 6s;             /* geschwindigkeit */
+    animation-iteration-count: infinite;  /* endlosschleife */
+    
+}
+
+@keyframes rainbow {
+    0%{color:orange;}
+    10%{color:purple;}
+    20%{color:red;}
+    30%{color:cadetblue;}
+    50%{color:yellow;}
+    60%{color:coral;}
+    70%{color:green;}
+    80%{color:cyan;}
+    90%{color:deeppink;}
+    100%{color:DodgerBlue;}
+}
+
